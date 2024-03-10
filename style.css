@@ -1,0 +1,475 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 945px;
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 650px;
+  background: url("../img/main.jpg") center center/cover no-repeat;
+  color: #fff;
+  padding: 0 20px;
+}
+.header_nav {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.header_info {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.header_info span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.header_call {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header_btn {
+  padding: 7px 20px;
+  color: #fff;
+  background-color: #C70101;
+  border: none;
+  border-radius: 5px;
+  margin-top: 4px;
+}
+.header_btn:hover {
+  cursor: pointer;
+}
+.header_content {
+  margin-top: 95px;
+  text-align: right;
+}
+.header_title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.header_subtitle {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.header_about {
+  margin-top: 65px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.header_about_card {
+  width: 136px;
+  text-align: center;
+}
+.header_about_card img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.header_consult {
+  margin-top: 69px;
+}
+.header_consult_btn {
+  padding: 13px 28px;
+  color: #fff;
+  background-color: #C70101;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header_consult_btn:hover {
+  cursor: pointer;
+}
+.header_links {
+  margin-top: 10px;
+}
+.header_link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.advantages {
+  min-height: 473px;
+  padding: 73px 20px 65px 20px;
+  background-color: #F6F6F6;
+  color: #0D0D0D;
+}
+.advantages_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.advantages_cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.advantages_item {
+  width: 277px;
+}
+.advantages_item_title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+}
+.advantages_item_descr {
+  font-size: 14px;
+  font-weight: 300;
+}
+.advantages_item_descr span {
+  color: #F00;
+  text-decoration-line: underline;
+}
+
+.consultation {
+  padding: 100px 20px 100px 20px;
+  min-height: 680px;
+  background: url("../img/consultation.jpg") center center/cover no-repeat;
+  color: #fff;
+}
+.consultation_title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+.consultation_subtitle {
+  width: 426px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 36px;
+}
+.consultation_input {
+  width: 303px;
+  height: 54px;
+  display: block;
+  margin-bottom: 12px;
+  padding: 0 21px;
+  border: none;
+  border-radius: 5px;
+}
+.consultation_btn {
+  width: 303px;
+  height: 58px;
+  margin-top: 5px;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #C70101;
+  border: none;
+  border-radius: 5px;
+}
+.consultation_btn:hover {
+  cursor: pointer;
+}
+
+.goods {
+  padding: 81px 20px 0 20px;
+}
+.goods_slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_arrow_left {
+  width: 31px;
+  margin-right: 66px;
+}
+.goods_slider_img img {
+  width: 100%;
+}
+.goods_arrow_right {
+  width: 31px;
+  margin-left: 66px;
+}
+
+.catalog {
+  padding: 81px 20px 0 20px;
+}
+.catalog_title {
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.catalog_pages {
+  margin-top: 46px;
+}
+.catalog_tabs {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.catalog_tab {
+  border: 2px solid #D0D0D0;
+  padding: 17px 56px;
+  color: #6B6B6B;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 10px;
+  transform: skew(-28deg);
+}
+.catalog_tab_active {
+  background-color: #C70101;
+  color: #fff;
+  border: none;
+}
+.catalog_tab:hover {
+  cursor: pointer;
+}
+.catalog_tab div {
+  transform: skew(28deg);
+}
+.catalog_cards {
+  margin-top: 57px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog_item {
+  width: 303px;
+  height: 442px;
+  border: 2px solid #E8E8E8;
+  text-align: center;
+  padding-top: 20px;
+  color: #0D0D0D;
+  margin-top: 20px;
+}
+.catalog_item_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.catalog_item_descr {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.catalog_more {
+  color: #C70101;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.catalog_more::after {
+  content: "";
+  width: 263px;
+  height: 3px;
+  display: block;
+  margin: 17px auto;
+  background-color: #E8E8E8;
+}
+.catalog_buy {
+  display: flex;
+}
+.catalog_price {
+  text-align: left;
+}
+.catalog_old_price {
+  color: #555;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: line-through;
+  margin-left: 18px;
+}
+.catalog_new_price {
+  color: #050505;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 18px;
+}
+.catalog_btn {
+  margin-left: 57px;
+}
+.catalog_buy_btn {
+  background-color: #C70101;
+  padding: 12px 27px;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.catalog_buy_btn:hover {
+  cursor: pointer;
+}
+
+.reviews {
+  padding: 80px 20px 48px 20px;
+}
+.reviews_title {
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.reviews_element {
+  display: flex;
+  margin-top: 60px;
+}
+.reviews_avatar {
+  margin-right: 60px;
+}
+.reviews_name {
+  color: #0D0D0D;
+  font-size: 18px;
+  font-weight: 700;
+}
+.reviews_descr {
+  color: #646464;
+  font-size: 14px;
+  font-weight: 500;
+}
+.reviews_text {
+  margin-top: 10px;
+  color: #0D0D0D;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.footer {
+  min-height: 630px;
+  background: url("../img/map.png") center center/cover no-repeat;
+}
+.footer_content {
+  width: 460px;
+  height: 270px;
+  background-color: #C70101;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0 70px 0;
+}
+.footer_street {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer_number {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 36px 0;
+}
+.footer_media {
+  display: flex;
+  justify-content: center;
+}
+.footer_circle {
+  width: 53px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: 27px;
+}
+.footer_circle:first-child {
+  margin-left: 0;
+}
+.footer_media img {
+  width: 15px;
+}
+
+@media (max-width: 961px) {
+  .catalog_cards {
+    justify-content: center;
+  }
+  .catalog_item {
+    margin: 10px 20px;
+  }
+}
+@media (max-width: 900px) {
+  .advantages_item {
+    width: 250px;
+  }
+}
+@media (max-width: 777px) {
+  .advantages_cards {
+    display: block;
+  }
+  .advantages_item {
+    margin: 25px auto;
+    width: 300px;
+  }
+  .consultation_title {
+    text-align: center;
+  }
+  .consultation_subtitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .consultation_form {
+    text-align: center;
+    margin-top: 35px;
+  }
+  .consultation_input {
+    margin: 15px auto;
+  }
+  .catalog_tab {
+    padding: 17px 40px;
+  }
+}
+@media (max-width: 682px) {
+  .header_info {
+    display: none;
+  }
+  .catalog_tabs {
+    display: block;
+    text-align: center;
+  }
+  .catalog_tab {
+    margin: 0 auto;
+    width: 450px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 531px) {
+  .consultation_title {
+    font-size: 30px;
+  }
+  .catalog_tab {
+    width: 320px;
+  }
+  .reviews_avatar {
+    display: block;
+    margin: 0 auto;
+  }
+  .reviews_element {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .reviews_name {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
